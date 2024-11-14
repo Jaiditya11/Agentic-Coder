@@ -1,8 +1,8 @@
-# Agentic-Coder
+# Agentic-Coder 🤖
 
 This project leverages a Retrieval-Augmented Generation (RAG) pipeline to create a code generation AI agent. Using embedded models, code parsing, and language generation, this agent reads input prompts and generates Python code snippets alongside descriptions for various tasks.
 
-## Features
+## Features 💪🏼
 
 - **Natural Language to Code**: Generates Python code based on natural language prompts.
 - **Retrieval-Augmented Generation (RAG)**: Uses a combination of document indexing and LLM-based text generation to enhance code creation.
@@ -10,7 +10,7 @@ This project leverages a Retrieval-Augmented Generation (RAG) pipeline to create
 - **Code Parsing and Metadata Extraction**: Includes descriptions and filenames for generated code for easy identification and storage.
 - **File Creation**: Creates a new file with the new generated code in the output folder.
 
-## Dependencies
+## Dependencies 👾
 
 This project relies on the following libraries and models:
 
@@ -19,16 +19,13 @@ This project relies on the following libraries and models:
 - `pydantic`: For parsing and validating output JSON structures.
 - `dotenv`: For loading environment variables.
 
-
-## Getting Started
-
-### Prerequisites
+### Prerequisites 🌱
 
 - Python 3.9+
 - A virtual environment with the required dependencies installed (refer to the dependencies section).
 - Ollama installed on your device.
   
-### Setup
+### Setup ⚙️
 **Set Up Virtual Environment**:  
  1.  To keep dependencies organized, set up a virtual environment:
     
