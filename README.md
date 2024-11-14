@@ -26,7 +26,8 @@ This project relies on the following libraries and models:
 
 - Python 3.9+
 - A virtual environment with the required dependencies installed (refer to the dependencies section).
-
+- Ollama installed on your device.
+  
 ### Setup
 **Set Up Virtual Environment**:  
  1.  To keep dependencies organized, set up a virtual environment:
@@ -43,7 +44,7 @@ pip install -r requirements.txt
 3.Environment Variables:
 Create a .env file in the root directory to load any necessary environment variables, such as API keys:
 ```bash
-API_KEY=your_api_key_here
+LLAMA_CLOUD_API_KEY=your_api_key_here
 ```
 4.Data Preparation:
 Place any required documents for indexing in the ./data directory. These documents will be used by the agent for retrieval and query processing.
