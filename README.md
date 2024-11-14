@@ -28,5 +28,9 @@ Ensure that these dependencies are installed in your virtual environment. You ca
 - A virtual environment with the required dependencies installed (refer to the dependencies section).
 
 ### Setup
+**Set Up Virtual Environment**:  
+ 1.  To keep dependencies organized, set up a virtual environment:
 
-```pip install -r requirements.txt ```
+   ```bash
+   python3 -m venv ai
+   source ai/bin/activate  # On Windows, use `ai\Scripts\activate`
