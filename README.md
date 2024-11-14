@@ -29,4 +29,4 @@ Ensure that these dependencies are installed in your virtual environment. You ca
 
 ### Setup
 
-pip install -r requirements.txt
+```pip install -r requirements.txt ```
