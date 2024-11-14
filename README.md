@@ -33,25 +33,25 @@ This project relies on the following libraries and models:
    python3 -m venv ai
    source ai/bin/activate  # On Windows, use `ai\Scripts\activate
    ```
-2.Install Dependencies
+2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
-3.Environment Variables:
+3. Environment Variables:
 Create a .env file in the root directory to load any necessary environment variables, such as API keys:
 ```bash
 LLAMA_CLOUD_API_KEY=your_api_key_here
 ```
-4.Data Preparation:
+4. Data Preparation:
 Place any required documents for indexing in the ./data directory. These documents will be used by the agent for retrieval and query processing.
 
-5.Usage
+5. Usage
 To start the agent and enter prompts for code generation, run the main script:
 ```bash
 python3 main.py
 ```
-6.Example Usage
+6. Example Usage
 ```
 Enter a Prompt (q to quit): Write a script to make a POST request to an API
 Code generated:
