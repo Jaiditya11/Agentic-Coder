@@ -1,4 +1,4 @@
-# AI Agent Code Generator
+# Agentic-Coder
 
 This project leverages a Retrieval-Augmented Generation (RAG) pipeline to create a code generation AI agent. Using embedded models, code parsing, and language generation, this agent reads input prompts and generates Python code snippets alongside descriptions for various tasks.
 
@@ -8,6 +8,7 @@ This project leverages a Retrieval-Augmented Generation (RAG) pipeline to create
 - **Retrieval-Augmented Generation (RAG)**: Uses a combination of document indexing and LLM-based text generation to enhance code creation.
 - **Context-Aware Code Generation**: Creates code snippets with context-relevant explanations.
 - **Code Parsing and Metadata Extraction**: Includes descriptions and filenames for generated code for easy identification and storage.
+- **File Creation**: Creates a new file with the new generated code in the output folder.
 
 ## Dependencies
 
@@ -18,7 +19,6 @@ This project relies on the following libraries and models:
 - `pydantic`: For parsing and validating output JSON structures.
 - `dotenv`: For loading environment variables.
 
-Ensure that these dependencies are installed in your virtual environment. You can also configure any other custom models as needed.
 
 ## Getting Started
 
@@ -30,7 +30,45 @@ Ensure that these dependencies are installed in your virtual environment. You ca
 ### Setup
 **Set Up Virtual Environment**:  
  1.  To keep dependencies organized, set up a virtual environment:
-
+    
    ```bash
    python3 -m venv ai
-   source ai/bin/activate  # On Windows, use `ai\Scripts\activate`
+   source ai/bin/activate  # On Windows, use `ai\Scripts\activate
+   ```
+2.Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+3.Environment Variables:
+Create a .env file in the root directory to load any necessary environment variables, such as API keys:
+```bash
+API_KEY=your_api_key_here
+```
+4.Data Preparation:
+Place any required documents for indexing in the ./data directory. These documents will be used by the agent for retrieval and query processing.
+
+5.Usage
+To start the agent and enter prompts for code generation, run the main script:
+```bash
+python3 main.py
+```
+6.Example Usage
+```
+Enter a Prompt (q to quit): Write a script to make a POST request to an API
+Code generated:
+from requests import post
+url = 'https://example.com/items'
+data = {'name': 'test item'}
+response = post(url, data=data)
+print(response.content)
+
+Description: The Python script in `test.py` makes a POST request to the `/items` endpoint of the example.com domain, sending data as part of the request body. The server response is then printed.
+
+Filename: Python_POST_request.py
+```
+Then it creates a new file with the filename and above code in the output folder.
+
+
+
+
