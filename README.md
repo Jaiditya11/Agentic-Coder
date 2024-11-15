@@ -23,7 +23,7 @@ This project relies on the following libraries and models:
 
 - Python 3.9+
 - A virtual environment with the required dependencies installed (refer to the dependencies section).
-- Ollama installed on your device.
+- Ollama installed on your device.(https://ollama.com/download)
   
 ### Setup ⚙️
 **Set Up Virtual Environment**:  
