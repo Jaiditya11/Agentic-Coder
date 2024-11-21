@@ -1,4 +1,6 @@
 # Agentic-Coder 🤖
+<img width="960" alt="Agentic_Code_Workflow" src="https://github.com/user-attachments/assets/5921743d-99f7-4c8d-939e-405292f3dff1">
+
 
 This project leverages a Retrieval-Augmented Generation (RAG) pipeline to create a code generation AI agent. Using embedded models, code parsing, and language generation, this agent reads input prompts and generates Python code snippets alongside descriptions for various tasks.
 
